@@ -55,9 +55,3 @@ from numpy import mean
 from numpy import absolute
 from numpy import sqrt
 print('RMSE(10-fold cross-validation):',sqrt(mean(absolute(scores))))
-
-from matplotlib import pyplot as plt
-from sklearn import tree
-fig = plt.figure(figsize=(25,20))
-_ = tree.plot_tree(model,filled=True)
-fig.savefig("decistion_tree.png")
